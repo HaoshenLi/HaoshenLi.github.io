@@ -291,10 +291,11 @@ My research interests focuse on artificial intelligence and its applications in 
   	</div> -->
 
 	<!-- 访客地图 - 使用iframe方式并调整大小 -->
-	<div style="width: 300px; height: 300px; margin: 20px auto;">
-		<iframe src="//clustrmaps.com/globe.js?d=v0caxcEBygwFcXMN60TwbapnQLJFCOfN943QAW1uVlY" 
-				width="100%" height="100%" frameborder="0" scrolling="no">
-		</iframe>
+	<!-- 尝试使用绝对定位和transform -->
+	<div style="position:relative;width:300px;height:300px;margin:20px auto;overflow:hidden;">
+    	<div style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%) scale(0.7);width:100%;">
+        	<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=v0caxcEBygwFcXMN60TwbapnQLJFCOfN943QAW1uVlY"></script>
+    	</div>
 	</div>
   
 	<!-- 可选：访问计数器
